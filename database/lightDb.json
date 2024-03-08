@@ -1,0 +1,12 @@
+[
+  {
+    "id": 1,
+    "lightStatus": "ON",
+    "imageLink":"https://th.bing.com/th/id/OIP.565TcOat3QSHtMsuwdW4WwAAAA?rs=1&pid=ImgDetMain"
+  },
+
+  { "id": 2, 
+  "lightStatus": "OFF" ,
+  "imageLink":"https://th.bing.com/th/id/OIP.maWRvjA73l5CT719MqvdSAHaHk?rs=1&pid=ImgDetMain"
+}
+]
