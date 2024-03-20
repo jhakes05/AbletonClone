@@ -1,6 +1,8 @@
 import React from 'react';
 import { Tabs, TabList, TabPanels, Tab, TabPanel, extendTheme, ChakraProvider,CSSReset } from '@chakra-ui/react';
-
+import About from './Tabs/About';
+import Jobs from './Tabs/Jobs';
+import Apprenticeships from './Tabs/Apprenticeships';
 const customTheme = extendTheme({
   colors: {
     brand: {
@@ -12,23 +14,24 @@ const customTheme = extendTheme({
 const Landing = () => {
   return (
     <ChakraProvider theme={customTheme}>
-      <Tabs variant="line" colorScheme="brand">
+      <Tabs colorScheme="brand">
       <CSSReset />
         <TabList>
           <Tab>About</Tab>
           <Tab>Jobs</Tab>
           <Tab>Apprenticeships</Tab>
         </TabList>
-
         <TabPanels>
           <TabPanel>
-            <p>About</p>
+            <About/>
           </TabPanel>
           <TabPanel>
             <p>Jobs</p>
+            <Jobs/>
           </TabPanel>
           <TabPanel>
             <p>Apprenticeships</p>
+            <Apprenticeships/>
           </TabPanel>
         </TabPanels>
       </Tabs>
